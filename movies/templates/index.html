@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta charset="utf-8" />
+    <title> Movies </title>
+    <link type='text/css' rel='stylesheet' href='static/css/index_style.css' />
+</head>
+<body>
+    <div id='container'>
+        <div id="movies">
+            {% for movie in session['movies'] %}
+                <ul>
+                    <li>Title: {{movie['title']}}</li>
+                    <li>Stars: {{movie['stars']}}</li>
+                    <li>Release Date: {{movie['release_date']}}</li>
+                    <a href="/show/{{movie['id']}}"><li>More Info >>></li></a>
+                    <form action="/edit/{{movie['id']}}" method='GET'>
+                        <input type="submit" value='Update' />
+                    </form>
+                    <form action="/delete/{{movie['id']}}" method="GET">
+                        <input type='submit' value='Delete' />
+                    </form>
+                </ul>
+            {% endfor %}
+        </div>
+        <form id='add' action='/add' method="GET">
+            <input type='submit' value='Add' />
+        </form>
+    </div>
+</body>
+</html>

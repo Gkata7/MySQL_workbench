@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+    #movies{
+        width: 780px;
+        display: inline-block;
+    }
+
+        #movies ul{
+            width: 350px;
+            height: 150px;
+            border: 2px solid black;
+            display: inline-block;
+            margin-left: 20px;
+            list-style-type: none;
+            margin-top: 10px;
+        }
+        #movies li{
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        #movies form {
+            display: inline-block;
+        }
+        #movies form input{
+            width: 70px;
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+
+    #add{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+    }
+    #add input{
+        width: 150px;
+        height: 80px;
+        font-size: 50pt;
+    }

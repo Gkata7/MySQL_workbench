@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta charset="utf-8" />
+    <title> Update Movies </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+        form label{
+            display: block;
+            margin-top: 10px;
+        }
+        form input{
+            position: absolute;
+            left: 40%;
+        }
+        form #button{
+            margin-top: 10px;
+            display: block;
+        }
+        form p, form label{
+            font-size: 15pt;
+            width: 100px;
+        }
+        form textarea{
+            width: 600px;
+            height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <form action='/update/{{id}}' method='POST' >
+        <label>
+            Title: <input type='text' name='title' value="{{title}}" />
+        </label>
+        <label>
+            Stars: <input type='text' name='stars' value="{{stars}}" />
+        </label>
+        <label>
+            Release Date: <input type='text' name='release_date' value="{{release_date}}"/>
+        </label>
+        <label>
+            Image Source: <input type='text' name='img_src' value="{{img_src}}"/>
+        </label>
+        <p>Description:</p>
+        <textarea name='desc'>{{description}}</textarea>
+        <input id='button' type='submit' value='Update' />
+    </form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+Last login: Wed Oct 26 16:02:46 on ttys000
+Garretts-MacBook-Pro:~ garrettkatashima$
+Garretts-MacBook-Pro:~ garrettkatashima$ mkdir test
+mkdir: test: File exists
+Garretts-MacBook-Pro:~ garrettkatashima$ open . test
+Garretts-MacBook-Pro:~ garrettkatashima$ touch index.html
+Garretts-MacBook-Pro:~ garrettkatashima$ touch styles.css
+Garretts-MacBook-Pro:~ garrettkatashima$ git init
+Reinitialized existing Git repository in /Users/garrettkatashima/.git/
+Garretts-MacBook-Pro:~ garrettkatashima$ git commit -m "create git"
+On branch master
+Untracked files:
+	.CFUserTextEncoding
+	.atom/
+	.bash_history
+	.bash_sessions/
+	.index.html.swp
+	.viminfo
+	Applications/
+	Desktop/
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	style.css
+	styles.css
+
+nothing added to commit but untracked files present
+Garretts-MacBook-Pro:~ garrettkatashima$ open . test
+Garretts-MacBook-Pro:~ garrettkatashima$ git commit -m "index.html"
+On branch master
+Changes not staged for commit:
+	deleted:    index.html
+
+Untracked files:
+	.CFUserTextEncoding
+	.atom/
+	.bash_history
+	.bash_sessions/
+	.index.html.swp
+	.viminfo
+	Applications/
+	Desktop/
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	styles.css
+	test/
+
+no changes added to commit
+Garretts-MacBook-Pro:~ garrettkatashima$ git commit -m "update css"
+On branch master
+Changes not staged for commit:
+	deleted:    index.html
+
+Untracked files:
+	.CFUserTextEncoding
+	.atom/
+	.bash_history
+	.bash_sessions/
+	.index.html.swp
+	.viminfo
+	Applications/
+	Desktop/
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	test/
+
+no changes added to commit
+Garretts-MacBook-Pro:~ garrettkatashima$ add style to style.css
+-bash: add: command not found
+Garretts-MacBook-Pro:~ garrettkatashima$ git log
+commit db7e570717c100904270dcad0ce54419f943113f
+Author: Garrett Katashima <garrettkatashima@Garretts-MacBook-Pro.local>
+Date:   Wed Oct 26 16:17:00 2016 -0700
+
+    update html
+Garretts-MacBook-Pro:~ garrettkatashima$ git add index.html
+Garretts-MacBook-Pro:~ garrettkatashima$ git.diff
+-bash: git.diff: command not found
+Garretts-MacBook-Pro:~ garrettkatashima$ git.dif
+-bash: git.dif: command not found
+Garretts-MacBook-Pro:~ garrettkatashima$ git diff
+Garretts-MacBook-Pro:~ garrettkatashima$ git log
+commit db7e570717c100904270dcad0ce54419f943113f
+Author: Garrett Katashima <garrettkatashima@Garretts-MacBook-Pro.local>
+Date:   Wed Oct 26 16:17:00 2016 -0700
+
+    update html
+Garretts-MacBook-Pro:~ garrettkatashima$

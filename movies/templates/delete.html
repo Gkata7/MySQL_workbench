@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta charset="utf-8" />
+    <title> Movies </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 250px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 20px;
+        }
+            form{
+                display: inline-block;
+            }
+            form input{
+                width: 70px;
+            }
+            p{
+                margin-top: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Do you really want to delete this movie?</p>
+        <form action="/delete_user/{{id}}" method='POST'>
+            <input type='hidden' name='delete_action' value='yes' />
+            <input type='submit' value='Yes' />
+        </form>
+        <form action="/delete_user/{{id}}" method='POST'>
+            <input type='hidden' name='delete_action' value='no' />
+            <input type='submit' value='No' />
+        </form>
+    </div>
+</body>
+</html>
