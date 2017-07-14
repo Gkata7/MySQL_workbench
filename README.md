@@ -1,2 +1,2 @@
-Using MySQL Workbenck, created tables and basic layouts of what databases would like with users. 
+Using MySQL Workbench, created EER Diagrams in the database. 
 In the txt documents, wrote up queries using MySQL Workbench.
